@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37E28968631F7E85FB6733A1 /* Pods_hipointX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4205D6A0C2B344ECD3AD70 /* Pods_hipointX.framework */; };
 		8AF8CF861FD76A2000E45642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8CF851FD76A2000E45642 /* AppDelegate.swift */; };
 		8AF8CF881FD76A2000E45642 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8CF871FD76A2000E45642 /* ViewController.swift */; };
 		8AF8CF8B1FD76A2000E45642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF8CF891FD76A2000E45642 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D4205D6A0C2B344ECD3AD70 /* Pods_hipointX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hipointX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40D6CE241230A2A720A31753 /* Pods-hipointX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hipointX.release.xcconfig"; path = "Pods/Target Support Files/Pods-hipointX/Pods-hipointX.release.xcconfig"; sourceTree = "<group>"; };
 		8AF8CF821FD76A2000E45642 /* hipointX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hipointX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF8CF851FD76A2000E45642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF8CF871FD76A2000E45642 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		8AF8CF8C1FD76A2000E45642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AF8CF8F1FD76A2000E45642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AF8CF911FD76A2000E45642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7FE865491243E3449E96D9 /* Pods-hipointX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hipointX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hipointX/Pods-hipointX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E28968631F7E85FB6733A1 /* Pods_hipointX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CAC7E8C32698DA9E5E7B717 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA7FE865491243E3449E96D9 /* Pods-hipointX.debug.xcconfig */,
+				40D6CE241230A2A720A31753 /* Pods-hipointX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A0E9702729C3BCA23305D10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D4205D6A0C2B344ECD3AD70 /* Pods_hipointX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8AF8CF791FD76A2000E45642 = {
 			isa = PBXGroup;
 			children = (
 				8AF8CF841FD76A2000E45642 /* hipointX */,
 				8AF8CF831FD76A2000E45642 /* Products */,
+				1CAC7E8C32698DA9E5E7B717 /* Pods */,
+				8A0E9702729C3BCA23305D10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AF8CF941FD76A2000E45642 /* Build configuration list for PBXNativeTarget "hipointX" */;
 			buildPhases = (
+				BEDA590E6DCF36098FBCDAA4 /* [CP] Check Pods Manifest.lock */,
 				8AF8CF7E1FD76A2000E45642 /* Sources */,
 				8AF8CF7F1FD76A2000E45642 /* Frameworks */,
 				8AF8CF801FD76A2000E45642 /* Resources */,
+				CFAC548E53542329DB5C6DFC /* [CP] Embed Pods Frameworks */,
+				3C84B7CC52A7378F7AB4E4F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C84B7CC52A7378F7AB4E4F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hipointX/Pods-hipointX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEDA590E6DCF36098FBCDAA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hipointX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFAC548E53542329DB5C6DFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hipointX/Pods-hipointX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8AF8CF7E1FD76A2000E45642 /* Sources */ = {
@@ -272,6 +350,7 @@
 		};
 		8AF8CF951FD76A2000E45642 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA7FE865491243E3449E96D9 /* Pods-hipointX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +366,7 @@
 		};
 		8AF8CF961FD76A2000E45642 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D6CE241230A2A720A31753 /* Pods-hipointX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
